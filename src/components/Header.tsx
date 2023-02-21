@@ -1,11 +1,16 @@
-import styles from "./Header.module.css";
+import type { ReactElement } from 'react';
 
-import igniteLogo from "../assets/ignite-logo.svg";
+import igniteLogo from '../assets/ignite-logo.svg';
 
-export function Header() {
-  return (
-    <header className={styles.header}>
-      <img src={igniteLogo} alt="Logotipo do Ignite" />
-    </header>
-  );
+import styles from './Header.module.css';
+
+export function Header(): ReactElement {
+	return (
+		<header className={styles.header}>
+			<img
+				src={igniteLogo}
+				alt="Logotipo do Ignite"
+			/>
+		</header>
+	);
 }
